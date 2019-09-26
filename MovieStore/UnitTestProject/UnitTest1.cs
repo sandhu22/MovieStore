@@ -13,7 +13,7 @@ namespace UnitTestProject
         {
             // Variable of actual and expected connection String 
             var ActualDBCon = Obj_Test.constring;
-            var ExpexctedDBCon = @"Data Source = WT135 - 826LSW\SQLEXPRESS;Initial Catalog = MOVIE_STORE; Integrated Security = True";
+            var ExpexctedDBCon = @"Data Source = WT135-826LSW\SQLEXPRESS;Initial Catalog = MOVIE_STORE; Integrated Security = True";
             //Assert - checking the output is which expected
             Assert.AreEqual(ExpexctedDBCon, ActualDBCon);
         }

@@ -11,10 +11,11 @@ namespace MovieStore
 {
     public class DatabaseManager
     {
-        public string constring = @"Data Source = WT135 - 826LSW\SQLEXPRESS;Initial Catalog = MOVIE_STORE; Integrated Security = True";
-        SqlConnection SqlConn = new SqlConnection();
+        public string constring = @"Data Source = WT135-826LSW\SQLEXPRESS;Initial Catalog = MOVIE_STORE; Integrated Security = True";
+        SqlConnection SqlConn = new SqlConnection("Data Source = WT135-826LSW\\SQLEXPRESS;Initial Catalog = MOVIE_STORE; Integrated Security = True");
         SqlCommand SqlStr = new SqlCommand();
-         String SqlStmt;
+        SqlDataReader SqlReader;
+        String SqlStmt;
 
         public DataTable ListMovies()
         {
